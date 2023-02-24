@@ -1,0 +1,1217 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnowTopix</title>
+  <link href="output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <div class="website-interface ">
+    <!-- header -->
+    <div class="top-bar top-0 px-10 py-2 bg-gray-800">
+      <div class="wrap-middle flex justify-between items-center">
+        <strong class="text-white text-xs font-medium">
+          Your #1 Source for best News and interesting links on the web!
+        </strong>
+        <nav class="top-list">
+          <ul class="list-none text-xs text-gray-200">
+            <li class="inline-block mr-7">
+              Login
+            </li>
+            <li class="inline-block mr-7">
+              Register
+            </li>
+            <li class="inline-block mr-7">
+              Contact
+            </li>
+            <li class="inline-block">
+              Submit
+            </li>
+          </ul>
+        </nav>  
+      </div>
+    </div>
+    <div class="main-header sticky duration-75 z-10 top-0 px-10 py-5 bg-white shadow-sm">
+      <div class="sticky-on flex gap-20">
+        <a href="/" class="">
+          <img src="../assets/images/Logo_de_Free.png" alt="main-logo" class="max-h-10 ">
+        </a>
+        <nav class="flex items-center justify-center">
+          <ul class="list-none text-sm font-bold">
+            <li class="inline-block ml-2">
+              <a 
+                href="#" 
+                class="text-yellow-600 pb-2 border-b-2 border-yellow-600">Home
+              </a>
+            </li>
+            <li class="inline-block ml-7">
+              <a href="#">Content</a>
+            </li>
+            <li class="inline-block ml-7">
+              <a href="#">Category</a>
+            </li>
+            <li class="inline-block ml-7">
+              <a href="#">Popular</a>
+            </li>
+            <li class="inline-block ml-7">
+              <a href="#">Author</a>
+            </li>
+            <li class="inline-block ml-7">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="action-header flex-wrap flex-1">
+          <div class="right-on flex items-center h-full justify-end">
+            <form action="">
+              <input type="text" placeholder="Live search..." class="w-30 h-9 mr-0 py-1 px-2 bg-gray-300 float-left placeholder:italic placeholder:text-gray-400 placeholder:text-xs placeholder:font-semibold text-black text-sm rounded-l-sm outline-none">
+
+              <button type="submit" class="py-1 px-2 float-right h-9 bg-yellow-600 ml-0 text-white rounded-r-sm">
+                <i class="ri-search-line" class="flex justify-center items-center"></i>
+              </button>
+            </form>
+            <div class="flex items-center">
+              <a class="inline ml-2 bg-red-600 py-1.5 px-2 rounded-sm text-white">
+                <i class="ri-upload-cloud-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <div class="secondary-header">
+      <section class="hero-banner">
+        <div style="background-image: url('../assets/images/hero2.jpg');" class="h-96 flex items-center justify-center bg-cover bg-no-repeat bg-center">
+          <div class="middle-content h-auto w-auto flex justify-center flex-col bg-gray-200 bg-opacity-60 rounded-md shadow-lg shadow-gray-900 p-14">
+            <h1 class="text-4xl font-bold text-black mb-5">
+              There is something to be learned <br/>from everyone.
+            </h1>
+            <form action="" class="mb-3">
+              <input type="text" placeholder="Search for best news, links..." class="h-10 px-5 w-4/5 outline-none float-left mr-0 rounded-l-md placeholder:text-xs placeholder:text-gray-400 placeholder:font-semibold">
+              <button class="h-10 px-5 float-left bg-yellow-600 ml-0 text-white rounded-r-md" type="submit">
+                Search
+              </button>
+            </form>
+            <div class="text-xs font-semibold">
+              Popular tags:
+              <a href="#" class="font-bold underline text-z ml-1">
+                music
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                photo
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                movie
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                education
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                review
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                social
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                therapy
+              </a>
+              <a href="#" class="font-bold underline ml-2">
+                animal
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category-banner">
+        <div class="w-full h-auto shadow shadow-gray-400">
+          <div class="px-10 py-2 flex gap-10">
+            <div class="dropdown flex items-center">
+              <form action="">
+                <div class="select">
+                  <select name="format" id="format" onchange="this.form.submit()">
+                      <option selected disabled>Browse Categories</option>
+                      <option value="health">Health (1)</option>
+                      <option value="cars">Cars (12)</option>
+                      <option value="animal">Animal (20)</option>
+                      <option value="jobs">Jobs (11)</option>
+                      <option value="education">Education (13)</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="menu-categories flex items-center py-3">
+              <nav class="">
+                <ul>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-1">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-heart-pulse text-lg mb-1 font-bold"></i>
+                      Health
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-car text-lg mb-1 font-bold"></i>
+                      Cars
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-video text-lg mb-1 font-bold"></i>
+                      Movies
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-music text-lg mb-1 font-bold"></i>
+                      Music
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-microchip text-lg mb-1 font-bold"></i>
+                      IT
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-regular fa-futbol text-lg mb-1 font-bold"></i>
+                      Soccer
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-school text-lg mb-1 font-bold"></i>
+                      Education
+                    </a> 
+                  </li>
+                  <li class="inline-block border-b-2 border-white hover:border-yellow-600 hover:duration-100 px-1 py-2 ml-5">
+                    <a href="" class="flex items-center justify-center flex-col text-sm">
+                      <i class="fa-solid fa-bars text-lg mb-1 font-bold"></i>
+                      More
+                    </a> 
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="social-platform flex items-center justify-end w-60 ml-auto">
+              <div class="mid-menu">
+                <ul class="flex items-center justify-center gap-5">
+                  <li class="inline-block">
+                    <i class="fa-brands fa-facebook text-yellow-600 hover:text-black cursor-pointer text-xl"></i>
+                  </li>
+                  <li class="inline-block">
+                    <i class="fa-brands fa-twitter text-yellow-600 hover:text-black cursor-pointer text-xl"></i>
+                  </li>
+                  <li class="inline-block">
+                    <i class="fa-brands fa-instagram text-yellow-600 hover:text-black cursor-pointer text-xl"></i>
+                  </li>
+                  <li class="inline-block">
+                    <i class="fa-brands fa-telegram text-yellow-600 hover:text-black cursor-pointer text-xl"></i>
+                  </li>
+                  <li class="inline-block">
+                    <i class="fa-brands fa-youtube text-yellow-600 hover:text-black cursor-pointer text-xl"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main>
+      <div class="article-wrapper px-10 py-5 bg-primary-white shadow shadow-gray-400">
+        <div class="wrap-middle flex">
+          <div class="content w-9/12">
+            <div class="article-title">
+              <h2 class="mb-5">
+                All posts in: <strong class="font-bold">
+                  Cars
+                </strong>
+              </h2>
+            </div>
+            <div>
+              <ul class="grid grid-cols-3 gap-10">
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="w-auto h-auto shadow-md shadow-gray-400 rounded-md">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-yellow-400 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content px-4 py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-2 mb-5">
+                        <div class="post-category bg-red-600 px-1 py-0.5 rounded-sm flex items-center justify-center">
+                          <a href="" class="text-xs text-white text-center font-semibold px-1">
+                            Health
+                          </a>
+                        </div> 
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                      </div>
+                      <div class="excerpt mb-5">
+                        <p class="text-sm font-semibold text-gray-500">
+                          <span class="block mb-3">
+                            Hub because the aformentioned trio already offers its customers protections when dealing with the virtual currency. 
+                          </span>
+                          <div class="flex gap-3">
+                            <a href="" class="px-2 py-1 text-white bg-red-700  text-xs rounded-sm hover:bg-red-900">
+                              <i class="fa-solid fa-paper-plane pr-1"></i>
+                              More Info
+                            </a>
+                            <a href="" class="px-2 py-1 text-white bg-gray-800  text-xs rounded-sm hover:bg-gray-900">
+                              <i class="fa-solid fa-cart-shopping pr-1"></i>
+                              Purchase
+                            </a>
+                          </div>
+                        </p>
+                      </div>
+                      <hr class="bg-yellow-700 h-0.5"/>
+                      <div class="author-box flex items-center mt-5">  
+                        <div class="at-img">
+                          <a href="">
+                            <img src="../assets/images/user.png" alt="" class="w-9 border p-1">
+                          </a>
+                        </div>
+                        <div class="at-links ml-4">
+                          <a href="" class="text-sm font-bold">John Wick</a>
+                          <br>
+                          <div class="text-xs text-gray-400">
+                            8 years ago
+                          </div>
+                        </div>
+                        <div class="featured ml-auto">
+                          <i class="fa-solid fa-trophy text-yellow-600"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="side-option-wrap w-3/12 flex">
+            <aside class="w-full pl-8">
+              <div class="widget mb-10">
+                <div class="flex mb-5 text-xs">
+                  <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                    <i class="fa-solid fa-chevron-down font-bold"></i>
+                  </div>
+                  <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                    ADVERTISEMENT
+                  </h3>
+                </div>
+                <div>
+                  <a href="w-full">
+                    <img src="../assets/images/banner1.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="widget mb-10">
+                <div class="flex mb-5 text-sm">
+                  <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                    <i class="fa-solid fa-chevron-down font-bold"></i>
+                  </div>
+                  <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                    WE'RE SOCIAL
+                  </h3>
+                </div>
+                <div class="mt-5 w-full h-auto bg-gray-100 px-1 py-3 rounded-md">
+                  <ul class="grid grid-cols-4">
+                    <li class="flex flex-col justify-center items-center mb-5">
+                      <a href="" class="px-3 py-1 bg-blue-900 rounded-sm">
+                        <i class="fa-brands fa-facebook-f text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center mb-5">
+                      <a href="" class="px-3 py-1 bg-blue-500 rounded-sm">
+                        <i class="fa-brands fa-twitter text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center mb-5">
+                      <a href="" class="px-3 py-1 bg-red-600 rounded-sm">
+                        <i class="fa-brands fa-youtube text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center mb-5">
+                      <a href="" class="px-3 py-1 bg-red-500 rounded-sm">
+                        <i class="fa-brands fa-google-plus-g text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center">
+                      <a href="" class="px-3 py-1 bg-orange-500 rounded-sm">
+                        <i class="fa-brands fa-soundcloud text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center">
+                      <a href="" class="px-3 py-1 bg-pink-600 rounded-sm">
+                        <i class="fa-brands fa-instagram text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center">
+                      <a href="" class="px-3 py-1 bg-green-600 rounded-sm">
+                        <i class="fa-solid fa-pen text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                    <li class="flex flex-col justify-center items-center">
+                      <a href="" class="px-3 py-1 bg-cyan-600 rounded-sm">
+                        <i class="fa-solid fa-message text-white"></i>
+                      </a>
+                      <span class="items flex flex-col justify-center items-center mt-1">
+                        <span class="text-sm font-bold text-gray-700">0</span>
+                        <span class="text-xs text-gray-400">likes</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="widget mb-10">
+                <div class="flex mb-5 text-sm">
+                  <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                    <i class="fa-solid fa-chevron-down font-bold"></i>
+                  </div>
+                  <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                    RECENT REVIEWS
+                  </h3>
+                </div>
+                <div class="review">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-gray-600 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content py-5">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800 hover:underline hover:text-orange-400">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-3 items-center border-b-2 pb-2">
+                        <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 py-1 rouned-sm text-white">
+                          <i class="fa-solid fa-star text-xs"></i>8.4
+                        </div>
+                        <span class="text-xs text-gray-400">
+                          Writen by <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                        </span> 
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="reviews flex gap-4 border-b-2 pb-3 mb-2">
+                  <img src="../assets/images/review3.jpg" alt="">
+                  <div class="flex flex-col">
+                    <a href="" class="hover:underline">
+                      <h4 class="text-xs font-bold text-gray-400">
+                        Unlimited images with drag and drop for every post added
+                      </h4>
+                    </a>
+                    <div class="entry-content mt-2 flex gap-3 items-center">
+                      <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 py-0.5 rouned-sm text-white">
+                        <i class="fa-solid fa-star text-xs"></i>8.4
+                      </div>
+                      <span class="text-xs text-gray-400">
+                        By  <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                      </span> 
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews flex gap-4 border-b-2 pb-3 mb-2">
+                  <img src="../assets/images/review3.jpg" alt="">
+                  <div class="flex flex-col">
+                    <a href="" class="hover:underline">
+                      <h4 class="text-xs font-bold text-gray-400">
+                        Unlimited images with drag and drop for every post added
+                      </h4>
+                    </a>
+                    <div class="entry-content mt-2 flex gap-3 items-center">
+                      <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 py-0.5 rouned-sm text-white">
+                        <i class="fa-solid fa-star text-xs"></i>8.4
+                      </div>
+                      <span class="text-xs text-gray-400">
+                        By  <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                      </span> 
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews flex gap-4 border-b-2 pb-3 mb-2">
+                  <img src="../assets/images/review3.jpg" alt="">
+                  <div class="flex flex-col">
+                    <a href="" class="hover:underline">
+                      <h4 class="text-xs font-bold text-gray-400">
+                        Unlimited images with drag and drop for every post added
+                      </h4>
+                    </a>
+                    <div class="entry-content mt-2 flex gap-3 items-center">
+                      <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 py-0.5 rouned-sm text-white">
+                        <i class="fa-solid fa-star text-xs"></i>8.4
+                      </div>
+                      <span class="text-xs text-gray-400">
+                        By  <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                      </span> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget mb-10">
+                <div class="flex mb-5 text-sm">
+                  <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                    <i class="fa-solid fa-chevron-down font-bold"></i>
+                  </div>
+                  <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                    Articles from Stock Photo
+                  </h3>
+                </div>
+                <div class="review mb-2">
+                  <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                    <a href="" class="text-gray-600 text-sm">
+                      <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                    </a>
+                  </div>
+                  <a href="" class="w-full block">
+                    <img src="../assets/images/stock.jpg" alt="" class="w-full h-auto rounded-t-md">
+                    <div class="content py-1">
+                      <a href="" class="font-semibold">
+                        <h2 class="text-md text-netural-800 hover:underline hover:text-orange-400">
+                          Hulu Answers Our Dreams of a 7th Heaven Revival
+                        </h2>
+                      </a>
+                      <div class="entry-content mt-2 flex gap-3 items-center border-b-2 pb-2">
+                        <span class="text-xs text-gray-400">
+                          Writen by <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                        </span> 
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="reviews flex gap-4 border-b-2 pb-3 mb-2">
+                  <img src="../assets/images/review3.jpg" alt="">
+                  <div class="flex flex-col">
+                    <a href="" class="hover:underline">
+                      <h4 class="text-xs font-bold text-gray-400">
+                        Unlimited images with drag and drop for every post added
+                      </h4>
+                    </a>
+                    <div class="entry-content mt-2 flex gap-3 items-center">
+                      <span class="text-xs text-gray-400">
+                        By  <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                      </span> 
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews flex gap-4 border-b-2 pb-3 mb-2">
+                  <img src="../assets/images/review3.jpg" alt="">
+                  <div class="flex flex-col">
+                    <a href="" class="hover:underline">
+                      <h4 class="text-xs font-bold text-gray-400">
+                        Unlimited images with drag and drop for every post added
+                      </h4>
+                    </a>
+                    <div class="entry-content mt-2 flex gap-3 items-center">
+                      <span class="text-xs text-gray-400">
+                        By  <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                      </span> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="flex mb-5 text-xs">
+                  <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                    <i class="fa-solid fa-chevron-down font-bold"></i>
+                  </div>
+                  <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                    ADVERTISEMENT
+                  </h3>
+                </div>
+                <div>
+                  <a href="w-full">
+                    <img src="../assets/images/banner1.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <dir class="socials flex items-center justify-center py-1 h-auto">
+        <div class="wrap-middle w-5/12 h-auto">
+          <ul class="flex items-center justify-center gap-8">
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-facebook-f text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-twitter text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-youtube text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-soundcloud text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-telegram text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="text-orange-600">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </dir>
+      <div class="slider-footer mb-5 w-full">
+        <div class="slider-wrapper w-full flex items-center carousel-item bg-white">
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+          space-between="0" free-mode="false">
+            <swiper-slide>
+              <div class="slider-item w-4/12 relative">
+                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                  <a href="" class="text-yellow-400 text-xs">
+                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                  </a>
+                </div>
+                <div class="img-wrapper">
+                  <img src="../assets/images/slider1.jpg" alt="">
+                </div>
+                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
+                  <a href="">
+                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
+                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                    </h3>
+                  </a>
+                  <div class="flex items-center gap-3 mt-3">
+                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                      <a href="" class="text-xs font-semibold block text-white">
+                        Technology
+                      </a>
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      8 years  ago
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-regular fa-eye"></i>
+                      800 views
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="slider-item w-4/12 relative">
+                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                  <a href="" class="text-yellow-400 text-xs">
+                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                  </a>
+                </div>
+                <div class="img-wrapper">
+                  <img src="../assets/images/slider2.jpg" alt="">
+                </div>
+                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
+                  <a href="">
+                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
+                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                    </h3>
+                  </a>
+                  <div class="flex items-center gap-6 mt-3">
+                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                      <a href="" class="text-xs font-semibold block text-white">
+                        Technology
+                      </a>
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      8 years  ago
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-regular fa-eye"></i>
+                      800 views
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="slider-item w-4/12 relative">
+                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                  <a href="" class="text-yellow-400 text-xs">
+                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                  </a>
+                </div>
+                <div class="img-wrapper">
+                  <img src="../assets/images/slider3.jpg" alt="">
+                </div>
+                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
+                  <a href="">
+                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
+                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                    </h3>
+                  </a>
+                  <div class="flex items-center gap-6 mt-3">
+                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                      <a href="" class="text-xs font-semibold block text-white">
+                        Technology
+                      </a>
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      8 years  ago
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-regular fa-eye"></i>
+                      800 views
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </swiper-slide>
+            <swiper-slide>
+              <div class="slider-item w-4/12 relative">
+                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                  <a href="" class="text-yellow-400 text-xs">
+                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                  </a>
+                </div>
+                <div class="img-wrapper">
+                  <img src="../assets/images/slider1.jpg" alt="">
+                </div>
+                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
+                  <a href="">
+                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
+                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                    </h3>
+                  </a>
+                  <div class="flex items-center gap-3 mt-3">
+                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                      <a href="" class="text-xs font-semibold block text-white">
+                        Technology
+                      </a>
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      8 years  ago
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-regular fa-eye"></i>
+                      800 views
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="slider-item w-4/12 relative">
+                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                  <a href="" class="text-yellow-400 text-xs">
+                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                  </a>
+                </div>
+                <div class="img-wrapper">
+                  <img src="../assets/images/slider2.jpg" alt="">
+                </div>
+                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
+                  <a href="">
+                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
+                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                    </h3>
+                  </a>
+                  <div class="flex items-center gap-6 mt-3">
+                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                      <a href="" class="text-xs font-semibold block text-white">
+                        Technology
+                      </a>
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      8 years  ago
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-regular fa-eye"></i>
+                      800 views
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="slider-item w-4/12 relative">
+                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                  <a href="" class="text-yellow-400 text-xs">
+                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                  </a>
+                </div>
+                <div class="img-wrapper">
+                  <img src="../assets/images/slider3.jpg" alt="">
+                </div>
+                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
+                  <a href="">
+                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
+                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                    </h3>
+                  </a>
+                  <div class="flex items-center gap-6 mt-3">
+                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                      <a href="" class="text-xs font-semibold block text-white">
+                        Technology
+                      </a>
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      8 years  ago
+                    </div>
+                    <div class="text-xs text-white">
+                      <i class="fa-regular fa-eye"></i>
+                      800 views
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </swiper-slide>
+          </swiper-container>          
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+</html>
