@@ -97,13 +97,13 @@
             </h1>
             <form action="" class="mb-3">
               <input type="text" placeholder="Search for best news, links..." class="h-10 px-5 w-4/5 outline-none float-left mr-0 rounded-l-md placeholder:text-xs placeholder:text-gray-400 placeholder:font-semibold">
-              <button class="h-10 px-5 float-left bg-yellow-600 ml-0 text-white rounded-r-md" type="submit">
+              <button class="h-10 px-5 float-left bg-yellow-600 ml-0 text-white rounded-r-md hover:bg-yellow-700" type="submit">
                 Search
               </button>
             </form>
             <div class="text-xs font-semibold">
               Popular tags:
-              <a href="#" class="font-bold underline text-z ml-1">
+              <a href="#" class="font-bold underline text-z ml-1 hover:text-yellow-600">
                 music
               </a>
               <a href="#" class="font-bold underline ml-2">
@@ -998,215 +998,359 @@
           </ul>
         </div>
       </dir>
-      <div class="slider-footer mb-5 w-full">
-        <div class="slider-wrapper w-full flex items-center carousel-item bg-white">
-          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
-          space-between="0" free-mode="false">
-            <swiper-slide>
-              <div class="slider-item w-4/12 relative">
-                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
-                  <a href="" class="text-yellow-400 text-xs">
-                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
-                  </a>
-                </div>
-                <div class="img-wrapper">
-                  <img src="../assets/images/slider1.jpg" alt="">
-                </div>
-                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
-                  <a href="">
-                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
-                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
-                    </h3>
-                  </a>
-                  <div class="flex items-center gap-3 mt-3">
-                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
-                      <a href="" class="text-xs font-semibold block text-white">
-                        Technology
-                      </a>
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      8 years  ago
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-regular fa-eye"></i>
-                      800 views
-                    </div>
+      <div class="slider-footer mb-5">
+        <swiper-container class="mySwiper w-full flex h-auto bg-white" navigation="true" slides-per-view="3"
+        space-between="0" free-mode="true">
+          <swiper-slide class="w-4/12">
+            <div class="slider-item">
+              <div class="post-likes bg-gray-100 px-2 pb-1 rounded-md absolute ml-1 mt-1">
+                <a href="" class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <img src="../assets/images/slider3.jpg" alt="">
+              </div>
+              <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-black pl-10 pr-16 py-3 bg-opacity-20">
+                <a href="">
+                  <h3 class="font-bold text-lg text-left text-gray-200 tracking-wider">
+                    Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                  </h3>
+                </a>
+                <div class="flex items-center gap-6 mt-3">
+                  <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                    <a href="" class="text-xs font-semibold block text-white">
+                      Technology
+                    </a>
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    8 years  ago
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-regular fa-eye"></i>
+                    800 views
                   </div>
                 </div>
               </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="slider-item w-4/12 relative">
-                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
-                  <a href="" class="text-yellow-400 text-xs">
-                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
-                  </a>
-                </div>
-                <div class="img-wrapper">
-                  <img src="../assets/images/slider2.jpg" alt="">
-                </div>
-                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
-                  <a href="">
-                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
-                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
-                    </h3>
-                  </a>
-                  <div class="flex items-center gap-6 mt-3">
-                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
-                      <a href="" class="text-xs font-semibold block text-white">
-                        Technology
-                      </a>
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      8 years  ago
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-regular fa-eye"></i>
-                      800 views
-                    </div>
+            </div> 
+          </swiper-slide>
+          <swiper-slide class="w-4/12">
+            <div class="slider-item relative">
+              <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                <a href="" class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <img src="../assets/images/slider2.jpg" alt="">
+              </div>
+              <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-black pl-10 pr-16 py-3 bg-opacity-20">
+                <a href="">
+                  <h3 class="font-bold text-lg text-left text-gray-200 tracking-wider">
+                    Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                  </h3>
+                </a>
+                <div class="flex items-center gap-6 mt-3">
+                  <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                    <a href="" class="text-xs font-semibold block text-white">
+                      Technology
+                    </a>
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    8 years  ago
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-regular fa-eye"></i>
+                    800 views
                   </div>
                 </div>
               </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="slider-item w-4/12 relative">
-                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
-                  <a href="" class="text-yellow-400 text-xs">
-                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
-                  </a>
-                </div>
-                <div class="img-wrapper">
-                  <img src="../assets/images/slider3.jpg" alt="">
-                </div>
-                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
-                  <a href="">
-                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
-                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
-                    </h3>
-                  </a>
-                  <div class="flex items-center gap-6 mt-3">
-                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
-                      <a href="" class="text-xs font-semibold block text-white">
-                        Technology
-                      </a>
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      8 years  ago
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-regular fa-eye"></i>
-                      800 views
-                    </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-4/12">
+            <div class="slider-item relative">
+              <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                <a href="" class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <img src="../assets/images/slider1.jpg" alt="">
+              </div>
+              <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-black pl-10 pr-16 py-3 bg-opacity-20">
+                <a href="">
+                  <h3 class="font-bold text-lg text-center text-gray-200 tracking-wider">
+                    Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                  </h3>
+                </a>
+                <div class="flex items-center gap-3 mt-3">
+                  <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                    <a href="" class="text-xs font-semibold block text-white">
+                      Technology
+                    </a>
                   </div>
-                </div>
-              </div> 
-            </swiper-slide>
-            <swiper-slide>
-              <div class="slider-item w-4/12 relative">
-                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
-                  <a href="" class="text-yellow-400 text-xs">
-                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
-                  </a>
-                </div>
-                <div class="img-wrapper">
-                  <img src="../assets/images/slider1.jpg" alt="">
-                </div>
-                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
-                  <a href="">
-                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
-                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
-                    </h3>
-                  </a>
-                  <div class="flex items-center gap-3 mt-3">
-                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
-                      <a href="" class="text-xs font-semibold block text-white">
-                        Technology
-                      </a>
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      8 years  ago
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-regular fa-eye"></i>
-                      800 views
-                    </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    8 years  ago
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-regular fa-eye"></i>
+                    800 views
                   </div>
                 </div>
               </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="slider-item w-4/12 relative">
-                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
-                  <a href="" class="text-yellow-400 text-xs">
-                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
-                  </a>
-                </div>
-                <div class="img-wrapper">
-                  <img src="../assets/images/slider2.jpg" alt="">
-                </div>
-                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
-                  <a href="">
-                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
-                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
-                    </h3>
-                  </a>
-                  <div class="flex items-center gap-6 mt-3">
-                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
-                      <a href="" class="text-xs font-semibold block text-white">
-                        Technology
-                      </a>
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      8 years  ago
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-regular fa-eye"></i>
-                      800 views
-                    </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-4/12">
+            <div class="slider-item">
+              <div class="post-likes bg-gray-100 px-2 pb-1 rounded-md absolute ml-1 mt-1">
+                <a href="" class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <img src="../assets/images/slider3.jpg" alt="">
+              </div>
+              <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-black pl-10 pr-16 py-3 bg-opacity-20">
+                <a href="">
+                  <h3 class="font-bold text-lg text-left text-gray-200 tracking-wider">
+                    Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                  </h3>
+                </a>
+                <div class="flex items-center gap-6 mt-3">
+                  <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                    <a href="" class="text-xs font-semibold block text-white">
+                      Technology
+                    </a>
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    8 years  ago
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-regular fa-eye"></i>
+                    800 views
                   </div>
                 </div>
               </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="slider-item w-4/12 relative">
-                <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
-                  <a href="" class="text-yellow-400 text-xs">
-                    <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
-                  </a>
-                </div>
-                <div class="img-wrapper">
-                  <img src="../assets/images/slider3.jpg" alt="">
-                </div>
-                <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-gray-400 pl-10 pr-16 py-3 bg-opacity-20 backdrop-blur-sm">
-                  <a href="">
-                    <h3 class="font-bold text-lg text-gray-200 tracking-wider">
-                      Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
-                    </h3>
-                  </a>
-                  <div class="flex items-center gap-6 mt-3">
-                    <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
-                      <a href="" class="text-xs font-semibold block text-white">
-                        Technology
-                      </a>
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      8 years  ago
-                    </div>
-                    <div class="text-xs text-white">
-                      <i class="fa-regular fa-eye"></i>
-                      800 views
-                    </div>
+            </div> 
+          </swiper-slide>
+          <swiper-slide class="w-4/12">
+            <div class="slider-item relative">
+              <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                <a href="" class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <img src="../assets/images/slider2.jpg" alt="">
+              </div>
+              <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-black pl-10 pr-16 py-3 bg-opacity-20">
+                <a href="">
+                  <h3 class="font-bold text-lg text-left text-gray-200 tracking-wider">
+                    Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                  </h3>
+                </a>
+                <div class="flex items-center gap-6 mt-3">
+                  <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                    <a href="" class="text-xs font-semibold block text-white">
+                      Technology
+                    </a>
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    8 years  ago
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-regular fa-eye"></i>
+                    800 views
                   </div>
                 </div>
-              </div> 
-            </swiper-slide>
-          </swiper-container>          
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-4/12">
+            <div class="slider-item relative">
+              <div class="post-likes bg-gray-100 px-2 py-0 rounded-md text-center absolute ml-1 mt-1">
+                <a href="" class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <img src="../assets/images/slider1.jpg" alt="">
+              </div>
+              <div class="item-content w-full h-auto absolute bottom-0 z-10 bg-black pl-10 pr-16 py-3 bg-opacity-20">
+                <a href="">
+                  <h3 class="font-bold text-lg text-center text-gray-200 tracking-wider">
+                    Audi’s Sochi Ad Is Great. Too Bad It’s Probably Fake.
+                  </h3>
+                </a>
+                <div class="flex items-center gap-3 mt-3">
+                  <div class="post-category px-1 pb-1 flex items-center justify-center bg-red-700 rounded-sm">
+                    <a href="" class="text-xs font-semibold block text-white">
+                      Technology
+                    </a>
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    8 years  ago
+                  </div>
+                  <div class="text-xs text-white">
+                    <i class="fa-regular fa-eye"></i>
+                    800 views
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <div class="footer-menu px-16">
+        <div class="middle-wrap flex gap-10">
+          <div class="item w-3/12">
+            <div class="flex mb-5 text-xs">
+              <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                <i class="fa-solid fa-chevron-down font-bold"></i>
+              </div>
+              <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                TOP ARTICLES
+              </h3>
+            </div>
+            <div class="article">
+              <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                <a href="" class="text-gray-600 text-sm">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <a href="" class="w-full block">
+                <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                <div class="content py-5">
+                  <a href="" class="font-semibold">
+                    <h2 class="text-md text-netural-800 hover:underline hover:text-orange-400">
+                      Hulu Answers Our Dreams of a 7th Heaven Revival
+                    </h2>
+                  </a>
+                  <div class="entry-content mt-2 flex gap-3 items-center pb-2">
+                    <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 py-1 rouned-sm text-white">
+                      <i class="fa-solid fa-star text-xs"></i>8.4
+                    </div>
+                    <span class="text-xs text-gray-400">
+                      Writen by <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                    </span> 
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item w-3/12">
+            <div class="flex mb-5 text-xs">
+              <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                <i class="fa-solid fa-chevron-down font-bold"></i>
+              </div>
+              <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                FEEDBURNER
+              </h3>
+            </div>
+            <div class="feed-info text-center text-sm leading-6">
+              Your #1 Source<br> 
+              for 
+              <span class="font-semibold border-b-2 border-yellow-700 pb-0.5">perfect things on web</span> 
+              that
+              <br/> 
+                makes you happy! We cover 
+              <br/> 
+              everything, 
+              <span class="font-semibold border-b-2 border-yellow-700 pb-0.5">
+                social media</span> news, <br/>
+              <span class="font-semibold border-b-2 border-yellow-700 pb-0.5">fashion</span> and <span>celebrity</span> style! 
+              <br/>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="email-subscribe mt-2 flex items-center justify-center">
+              <form action="">
+                <div class="form-control w-full">
+                  <input type="text" class="w-full border-l border-r border-t outline-none border-yellow-700 py-2 px-6 text-center text-xs" name="email" placeholder="Enter your email address">
+                </div>
+                <button type="submit" class="w-full text-xs bg-yellow-600 px-6 py-2 font-semibold text-white hover:bg-yellow-500">
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="item w-3/12">
+            <div class="flex mb-5 text-xs">
+              <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                <i class="fa-solid fa-chevron-down font-bold"></i>
+              </div>
+              <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                TAGS
+              </h3>
+            </div>
+            <div class="tags w-full">
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">amazing</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">animal</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">background</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">blog</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">buy</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">featured</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">images</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">magazine</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">media</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">photo</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">photography</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">responsive</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">review</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">social</a>
+              <a href="" class="bg-gray-200 text-xs px-2 pt-1 pb-1.5 rounded-sm mb-2 inline-block mr-1 hover:bg-gray-400">video</a>
+            </div>
+          </div>
+          <div class="item w-3/12">
+            <div class="flex mb-5 text-xs">
+              <div class="icon-box text-white px-2 py-1 bg-gray-900 rounded-t-sm">
+                <i class="fa-solid fa-chevron-down font-bold"></i>
+              </div>
+              <h3 class="font-bold border-b-2 pl-3 border-gray-900">
+                BEST REVIEWS
+              </h3>
+            </div>
+            <div class="article">
+              <div class="post-likes bg-gray-200 px-2 py-1 rounded-md text-center absolute ml-1 mt-1">
+                <a href="" class="text-gray-600 text-sm">
+                  <i class="fa-solid fa-heart hover:text-black"></i> <strong>149</strong>
+                </a>
+              </div>
+              <a href="" class="w-full block">
+                <img src="../assets/images/hero1.jpg" alt="" class="w-full h-auto rounded-t-md">
+                <div class="content py-5">
+                  <a href="" class="font-semibold">
+                    <h2 class="text-md text-netural-800 hover:underline hover:text-orange-400">
+                      Hulu Answers Our Dreams of a 7th Heaven Revival
+                    </h2>
+                  </a>
+                  <div class="entry-content mt-2 flex gap-3 items-center pb-2">
+                    <div class="review-mark text-xs flex gap-1 items-center justify-center bg-orange-400 px-1.5 py-1 rouned-sm text-white">
+                      <i class="fa-solid fa-star text-xs"></i>8.4
+                    </div>
+                    <span class="text-xs text-gray-400">
+                      Writen by <a href="" class="font-semibold text-gray-700 underline">AnThemes</a>
+                    </span> 
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-policy w-full py-10">
+        <div class="copyright text-sm flex text-gray-400 items-center justify-center">
+          <p class="text-center">
+            Foot is a Stylish and Responsive Grid Personal Theme for Bloggers.
+            <br>
+            Copyright © 2020 - Theme by 
+            <a href="" class="pb-0.5 font-semibold border-b border-b-yellow-600 text-black">Anthemes.com</a>
+          </p>
         </div>
       </div>
     </footer>
